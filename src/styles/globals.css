@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-midnight: #080611;
+  --color-royal: #160D2B;
+  --color-violet: #29113D;
+  --color-gold: #D9A441;
+  --color-champagne: #FFE2A0;
+  --color-orange: #FF9B32;
+  --color-ivory: #FFF2D6;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #080611;
+}
+::-webkit-scrollbar-thumb {
+  background: #29113D;
+  border-radius: 9999px;
+  border: 1px solid rgba(217, 164, 65, 0.4);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D9A441;
+}
+
+/* Gold Gradient Text */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #FFF2D6 0%, #FFE2A0 30%, #D9A441 70%, #FF9B32 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-subtle {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFE2A0 60%, #D9A441 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid rgba(217, 164, 65, 0.35);
+  box-shadow: 0 0 15px rgba(217, 164, 65, 0.1), inset 0 0 15px rgba(217, 164, 65, 0.05);
+}
+
+.gold-border-glow {
+  border: 1px solid rgba(217, 164, 65, 0.6);
+  box-shadow: 0 0 20px rgba(217, 164, 65, 0.3), inset 0 0 20px rgba(217, 164, 65, 0.15);
+}
+
+/* Glass Card */
+.glass-panel {
+  background: rgba(22, 13, 43, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(217, 164, 65, 0.28);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.glass-panel-hover:hover {
+  background: rgba(35, 17, 65, 0.8);
+  border-color: rgba(255, 226, 160, 0.6);
+  box-shadow: 0 12px 36px -8px rgba(0, 0, 0, 0.8), 0 0 30px rgba(217, 164, 65, 0.35);
+  transform: translateY(-4px);
+}
+
+/* Glowing Diya Flame */
+.diya-flame {
+  border-radius: 50% 50% 20% 20% / 60% 60% 40% 40%;
+  background: radial-gradient(ellipse at bottom, #ffffff 0%, #fff4c2 25%, #ff9b32 70%, rgba(255, 60, 0, 0) 100%);
+  filter: drop-shadow(0 0 12px #ff9b32) drop-shadow(0 0 24px #ffd043);
+  animation: flicker 2s infinite ease-in-out;
+}
+
+/* Radial Glow Backdrops */
+.ambient-glow-gold {
+  background: radial-gradient(circle, rgba(217, 164, 65, 0.25) 0%, rgba(22, 13, 43, 0) 70%);
+}
+
+.ambient-glow-purple {
+  background: radial-gradient(circle, rgba(41, 17, 61, 0.6) 0%, rgba(8, 6, 17, 0) 70%);
+}
+
+.ambient-glow-diya {
+  background: radial-gradient(circle, rgba(255, 155, 50, 0.35) 0%, rgba(217, 164, 65, 0.15) 40%, rgba(8, 6, 17, 0) 75%);
+}
+
+/* Shimmer Line */
+.gold-shimmer-line {
+  background: linear-gradient(90deg, transparent, rgba(217, 164, 65, 0.8), rgba(255, 226, 160, 1), rgba(217, 164, 65, 0.8), transparent);
+}
